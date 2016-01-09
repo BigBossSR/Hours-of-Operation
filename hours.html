@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hours of Operation</title>
+	<link rel="stylesheet" type="text/css" href="hours.css">
+</head>
+<body>
+<form>
+	<div class="hours-display">
+		<div class="display-day" name="monday">
+			<span class="day">Monday</span>
+			<span class="set-time">
+				<input type="time" name="open-time"> to <input type="time" name="close-time">			
+				<!-- <span class="target">None</span> -->
+				<!-- <span class="time">
+					<span class="open-hours">None</span><span class="open-minutes"></span>
+					to
+					<span class="close-hours">None</span><span class="close-minutes"></span>
+				</span> -->
+				<span class="remove">remove</span>
+			</span>
+		</div>
+		<div class="display-day" name="tuesday">
+			<span class="day">Tuesday</span>
+			<span class="set-time">
+				<input type="time" name="open-time"> to <input type="time" name="close-time">			
+				<!-- <span class="target">None</span> -->
+				<!-- <span class="time">
+					<span class="open-hours">None</span><span class="open-minutes"></span>
+					to
+					<span class="close-hours">None</span><span class="close-minutes"></span>
+				</span> -->
+				<span class="remove">remove</span>
+			</span>
+		</div>
+		<div class="display-day" name="wednesday">
+			<span class="day">Wednesday</span>
+			<span class="set-time">
+				<input type="time" name="open-time"> to <input type="time" name="close-time">			
+				<!-- <span class="target">None</span> -->
+			<!-- 	<span class="time">
+					<span class="open-hours">None</span><span class="open-minutes"></span>
+					to
+					<span class="close-hours">None</span><span class="close-minutes"></span>
+				</span> -->
+				<span class="remove">remove</span>
+			</span>
+		</div>
+		<div class="display-day" name="thursday">
+			<span class="day">Thursday</span>
+			<span class="set-time">
+				<input type="time" name="open-time"> to <input type="time" name="close-time">			
+				<!-- <span class="target">None</span> -->
+				<!-- <span class="time">
+					<span class="open-hours">None</span><span class="open-minutes"></span>
+					to
+					<span class="close-hours">None</span><span class="close-minutes"></span>
+				</span> -->
+				<span class="remove">remove</span>
+			</span>
+		</div>
+		<div class="display-day" name="friday">
+			<span class="day">Friday</span>
+			<span class="set-time">
+				<input type="time" name="open-time"> to <input type="time" name="close-time">			
+				<!-- <span class="target">None</span> -->
+				<!-- <span class="time">
+					<span class="open-hours">None</span><span class="open-minutes"></span>
+					to
+					<span class="close-hours">None</span><span class="close-minutes"></span>
+				</span> -->
+				<span class="remove">remove</span>
+			</span>
+		</div>
+		<div class="display-day" name="saturday">
+			<span class="day">Saturday</span>
+			<span class="set-time">
+				<input type="time" name="open-time"> to <input type="time" name="close-time">			
+				<!-- <span class="target">None</span> -->
+				<!-- <span class="time">
+					<span class="open-hours">None</span><span class="open-minutes"></span>
+					to
+					<span class="close-hours">None</span><span class="close-minutes"></span>
+				</span> -->
+				<span class="remove">remove</span>
+			</span>
+		</div>
+		<div class="display-day" name="sunday">
+			<span class="day">Sunday</span>
+			<span class="set-time">
+				<input type="time" name="open-time"> to <input type="time" name="close-time">			
+				<!-- <span class="target">None</span> -->
+				<!-- <span class="time">
+					<span class="open-hours">None</span><span class="open-minutes"></span>
+					to
+					<span class="close-hours">None</span><span class="close-minutes"></span>
+				</span> -->
+				<span class="remove">remove</span>
+			</span>
+		</div>
+	</div>
+	<div class="hours-panel">
+		<div class="checkboxes-day">
+			<input type="checkbox" value="monday"> Mon
+			<input type="checkbox" value="tuesday"> Tues
+			<input type="checkbox" value="wednesday"> Wed
+			<input type="checkbox" value="thursday"> Thur
+			<input type="checkbox" value="friday"> Fri
+			<input type="checkbox" value="saturday"> Sat
+			<input type="checkbox" value="sunday"> Sun
+		</div>
+		<div class="checkboxes-group">
+<!-- 			<input type="checkbox" value="weekdays">All Weekdays
+			<input type="checkbox" value="weekends">All Weekends -->
+			<button type="button" class="weekdays-btn">All Weekdays</button>
+			<button type="button" class="weekends-btn">All Weekends</button>
+		</div>
+		<div class="time-form">
+			<select class="open-hours">
+				<option value="00">Midnight</option>
+				<option value="01">1 AM</option>
+				<option value="02">2 AM</option>
+				<option value="03">3 AM</option>
+				<option value="04">4 AM</option>
+				<option value="05">5 AM</option>
+				<option value="06">6 AM</option>
+				<option value="07">7 AM</option>
+				<option value="08">8 AM</option>
+				<option value="09" selected>9 AM</option>
+				<option value="10">10 AM</option>
+				<option value="11">11 AM</option>
+				<option value="12">12 PM</option>
+				<option value="13">1 PM</option>
+				<option value="14">2 PM</option>
+				<option value="15">3 PM</option>
+				<option value="16">4 PM</option>
+				<option value="17">5 PM</option>
+				<option value="18">6 PM</option>
+				<option value="19">7 PM</option>
+				<option value="20">8 PM</option>
+				<option value="21">9 PM</option>
+				<option value="22">10 PM</option>
+				<option value="23">11 PM</option>
+			</select>
+			:
+			<select class="open-minutes">
+				<option value="00" selected>00</option>
+				<option value="15">15</option>
+				<option value="30">30</option>
+				<option value="45">45</option>
+			</select>
+			to
+			<select class="close-hours">
+				<option value="00">Midnight</option>
+				<option value="01">1 AM</option>
+				<option value="02">2 AM</option>
+				<option value="03">3 AM</option>
+				<option value="04">4 AM</option>
+				<option value="05">5 AM</option>
+				<option value="06">6 AM</option>
+				<option value="07">7 AM</option>
+				<option value="08">8 AM</option>
+				<option value="09">9 AM</option>
+				<option value="10">10 AM</option>
+				<option value="11">11 AM</option>
+				<option value="12">12 PM</option>
+				<option value="13">1 PM</option>
+				<option value="14">2 PM</option>
+				<option value="15">3 PM</option>
+				<option value="16">4 PM</option>
+				<option value="17" selected>5 PM</option>
+				<option value="18">6 PM</option>
+				<option value="19">7 PM</option>
+				<option value="20">8 PM</option>
+				<option value="21">9 PM</option>
+				<option value="22">10 PM</option>
+				<option value="23">11 PM</option>
+			</select>
+			:
+			<select class="close-minutes" value="00">
+				<option value="00" selected>00</option>
+				<option value="15">15</option>
+				<option value="30">30</option>
+				<option value="45">45</option>
+			</select>
+			<button type="button" class="set-day">Set Day(s)</button>
+		</div>
+		<button class="submit" type="button">Submit Your Hours</button>
+	</div>
+</form>
+
+
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="hours.js"></script>
+</body>
+</html>

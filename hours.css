@@ -1,0 +1,11 @@
+.day {
+	font-weight: bold;
+	margin-right: 5%;
+}
+
+.remove {
+	text-decoration: underline;
+	cursor: pointer;
+	font-style: italic;
+	color: red;
+}

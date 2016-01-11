@@ -149,8 +149,9 @@ $(document).on("ready", function(){
 				fakeJSONData[name + "_close_hours"] = closeTime[0];
 				fakeJSONData[name + "_close_minutes"] = closeTime[1];
 			}
-			console.log(name + ": " + fakeJSONData[name + "_open_hours"], fakeJSONData[name + "_open_minutes"], fakeJSONData[name + "_close_hours"], fakeJSONData[name + "_close_minutes"])
-			console.log(fakeJSONData)
+			clearSetTime(displayArr[i]);
 		}
+		alert("You have submitted your hours!");
+
 	});
 })
